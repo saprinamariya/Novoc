@@ -1,0 +1,141 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1180px;
+    height: 100%;
+    margin: auto;
+}
+
+.header {
+    height: 145px;
+    background: #f7f7f7;
+}
+
+.header__inner {
+    display: flex;
+}
+
+.header__logo {
+    width: 185px;
+    height: 145px;
+    background: #74cfb7;
+    display: flex;
+    justify-content: center;
+    margin-right: 44px;
+}
+
+.header__logo-image {
+    align-self:center;
+}
+.header__item {
+    padding-top: 50px;
+    padding-right: 20px;
+}
+
+.header__item:last-child {
+    padding-right: 0;
+    margin-left: auto;
+}
+
+.header__item-caption {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.header__item-description {
+    display: flex;
+    font-size: 14px;
+}
+.header__logo-metro {
+    margin: auto 15px auto 0;
+}
+.logo-metro_yellow {
+    fill: #fbaa34;
+}
+
+.header__button {
+    margin-left: auto;
+}
+
+.search-panel {
+    height: 67px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.search-panel__inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.main-menu {
+    display: flex;
+}
+
+.main-menu__item {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 0 15px;
+    border-right: 1px solid #979797;
+    cursor: pointer;
+    transition: color .2s;
+}
+
+.main-menu__item_active {
+    color: #74cfb7;
+}
+
+.main-menu__item_active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 38px;
+    background: #74cfb7;
+    height: 4px;
+    width: 100%;
+}
+
+.main-menu__item:hover {
+    color: #74cfb7;
+}
+
+.main-menu__item:first-child {
+    padding-left: 0;
+}
+
+.main-menu__item:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.button {
+    height: 48px;
+    padding: 0 25px;
+    border: none;
+    outline: none;
+    border-radius: 3px 3px;
+    font-size: 14px;
+    color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: background .2s;
+}
+
+.button_blue {
+    background: #079fc2;
+}
+
+.button_blue:hover {
+    background: #0f7991;
+}
+
+.search-panel__btn-search {
+    margin-left: auto;
+    border: none;
+    outline: none;
+}
