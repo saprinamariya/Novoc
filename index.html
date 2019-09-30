@@ -49,7 +49,7 @@
         <div class="search-panel">
             <div class="container">
                 <div class="search-panel__inner">
-                    <div class="main-menu">
+                    <div class="main-menu search-panel__menu">
                         <a class="main-menu__item">новостройки</a>
                         <a class="main-menu__item main-menu__item_active">элитная недвижимость</a>
                         <a class="main-menu__item">вторичная недвижимость</a>
@@ -58,10 +58,11 @@
                         <a class="main-menu__item">услуги</a>
                         <a class="main-menu__item">контакты</a>
                     </div>
+                    <input class="search-panel__input" type="text" placeholder="Поиск">
                     <button class="search-panel__btn-search">
                         <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="шапка" transform="translate(-1296.000000, -172.000000)" fill="#74CFB7" fill-rule="nonzero">
+                            <g id="Symbols" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                <g id="шапка" transform="translate(-1296.000000, -172.000000)" fill-rule="nonzero">
                                     <g id="меню" transform="translate(0.000000, 145.000000)">
                                         <path d="M1309.75992,39.5773333 L1306.87435,36.6446667 C1306.85369,36.6236667 1306.83007,36.6076667 1306.80744,36.5893333 C1308.48145,34.2206667 1308.27712,30.9046667 1306.18198,28.7753333 C1305.01732,27.5916667 1303.4909,27 1301.96448,27 C1300.43806,27 1298.91164,27.5916667 1297.74699,28.7753333 C1295.41767,31.1426667 1295.41767,34.9806667 1297.74699,37.348 C1298.91164,38.5316667 1300.43806,39.1233333 1301.96448,39.1233333 C1303.28493,39.1233333 1304.60407,38.6783333 1305.69034,37.7926667 C1305.69887,37.8023333 1305.70543,37.8133333 1305.71461,37.8226667 L1308.60018,40.7553333 C1308.76023,40.9186667 1308.97014,41 1309.18005,41 C1309.38996,41 1309.59986,40.9186667 1309.75992,40.756 C1310.08003,40.4303333 1310.08003,39.9026667 1309.75992,39.5773333 Z M1301.96448,37.457 C1300.80934,37.457 1299.7234,36.9996667 1298.9064,36.1696667 C1297.22025,34.456 1297.22025,31.6676667 1298.9064,29.954 C1299.72307,29.124 1300.80934,28.6666667 1301.96448,28.6666667 C1303.11963,28.6666667 1304.20557,29.124 1305.02257,29.954 C1306.70872,31.6676667 1306.70872,34.456 1305.02257,36.1696667 C1304.20557,36.9996667 1303.11963,37.457 1301.96448,37.457 Z" id="search-icon"></path>
                                     </g>
@@ -72,5 +73,116 @@
                 </div>
             </div>
         </div>
+        <div class="line-background">
+            <div class="container">
+                <div class="line-background_green"></div>
+            </div>
+        </div>
+        <div class="configuration">
+            <div class="container">
+                <h2 class="configuration__title">Купить квартиру в новостройке</h2>
+                <div class="search-form">
+                    <div class="search-form__top-row">
+                        <div class="search-form__range">
+                            <div class="search-form__range-title">
+                                Стоимость, млн руб.
+                            </div>
+                            <div class="search-form__range-body">
+                                <div id="slider"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <div class="map__card">
+                <div class="map__card-image">
+                    <img src="./img/map-card-image.png" alt="Map card">
+                </div>
+                <div class="map__card-body">
+                    <div class="map__card-item-caption">
+                        ЖК Премиум-квартал JAZZ
+                    </div>
+                    <div class="map__card-item-description">
+                        <svg class="logo-metro logo-metro_green map__card-logo-metro" width="17px" height="12px" viewBox="0 0 17 12">
+                            <g id="Symbols" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                <g id="шапка" transform="translate(-359.000000, -83.000000)">
+                                    <g id="адрес" transform="translate(359.000000, 49.000000)">
+                                        <polyline id="metro-logo-vector-light-copy-4" points="8.029464 46 10.638816 41.4646 11.722176 44.536432 10.847424 44.536432 10.847424 45.888208 16.058904 45.888208 16.058904 44.536432 15.064224 44.536432 11.32068 34.688872 8.029464 40.75192 4.738248 34.688872 0.994704 44.536432 0 44.536432 0 45.888208 5.211504 45.888208 5.211504 44.536432 4.336728 44.536432 5.420088 41.4646 8.029464 46"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="map__card-item-description-text">
+                            Марьина роща
+                        </div>
+                        <div class="map__card-item-time">
+                            2 минуты пешком
+                        </div>
+                    </div>
+                    <div class="map__card-item-text">
+                        Марьина роща, ул. Сущевский вал, 49
+                    </div>
+                    <table class="table">
+                        <tr class="table__row">
+                            <td class="table__cell_caption">1-комнатные от 30 м²</td>
+                            <td class="table__cell_description">6 900 000р.</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell_caption">2-комнатные от 75 м²</td>
+                            <td class="table__cell_description">22 900 000р.</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell_caption">3-комнатные от 74 м²</td>
+                            <td class="table__cell_description">17 400 000р.</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell_caption">4-комнатные от 177 м²</td>
+                            <td class="table__cell_description">63 200 000р.</td>
+                        </tr>
+                    </table>
+                    <table class="table">
+                        <tr class="table__row_item">
+                            <td class="table__cell_caption">Стадия готовности:</td>
+                            <td class="table__cell_description">На заселении</td>
+                        </tr>
+                        <tr class="table__row_item">
+                            <td class="table__cell_caption">Ипотека:</td>
+                            <td class="table__cell_description">Есть</td>
+                        </tr>
+                        <tr class="table__row_item">
+                            <td class="table__cell_caption">Отделка:</td>
+                            <td class="table__cell_description">Возможна</td>
+                        </tr>
+                    </table>
+                    <button class="button button_blue button_shadow-green map__table-button">Заказать просмотр</button>
+                </div>
+            </div>
+            <button class="map-main">
+                <svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="novoc-main" transform="translate(-1335.000000, -679.000000)">
+                            <g id="свернуть" transform="translate(1335.000000, 679.000000)">
+                                <g id="Oval">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                </g>
+                                <g id="up" transform="translate(15.000000, 13.000000)" fill="#20262E" fill-rule="nonzero" opacity="0.504575893">
+                                    <path d="M13.7730612,31.9869388 C14.3934694,31.9869388 14.8963265,31.4840816 14.8963265,30.8702041 L14.8963265,10.475102 L19.9640816,15.5428571 C20.1795918,15.7583673 20.4669388,15.8693878 20.7542857,15.8693878 C21.0416327,15.8693878 21.3289796,15.7583673 21.5444898,15.5428571 C21.9820408,15.1053061 21.9820408,14.3934694 21.5444898,13.9559184 L14.5632653,6.97469388 C14.1257143,6.53714286 13.4138776,6.53714286 12.9763265,6.97469388 L6.00163265,13.9559184 C5.56408163,14.3934694 5.56408163,15.1053061 6.00163265,15.5428571 C6.43918367,15.9804082 7.15102041,15.9804082 7.58857143,15.5428571 L12.6563265,10.475102 L12.6563265,30.8702041 C12.6563265,31.4840816 13.1526531,31.9869388 13.7730612,31.9869388 Z" id="Shape"></path>
+                                    <path d="M27.5461224,1.12326531 C27.5461224,0.502857143 27.0432653,0 26.4293878,0 L1.11673469,0 C0.496326531,0 0,0.502857143 0,1.12326531 C0,1.74367347 0.502857143,2.24653061 1.11673469,2.24653061 L26.4293878,2.24653061 C27.0497959,2.24 27.5461224,1.73714286 27.5461224,1.12326531 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
+
+
+        <script src="./js/jquery.js"></script>
+        <script src="./js/jquery.ui-slider.js"></script>
+        <script src="./main.js"></script>
+
     </body>
 </html>
