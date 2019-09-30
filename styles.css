@@ -309,10 +309,6 @@ body {
     padding-bottom: 14px;
 }
 
-.card__logo-metro {
-    margin-right: 5px;
-}
-
 .map__card-item-description-text {
     font-size: 13px;
     color: #4c4c4c;
@@ -379,46 +375,49 @@ body {
     border-radius: 50%;
 }
 
-.card {
+.realty-cards {
     background: #f7f7f7;
-    height: 1849px;
 }
 
-.card-list__item {
+.realty-card {
     display: flex;
     padding-top: 60px;
 }
 
-.card-list__item-body {
+.realty-card__body {
     width: 580px;
     height: 520px;
     background: #ffffff;
     padding: 35px 53px 0 53px;
 }
 
-.card-list__item-caption {
+.realty-card__title {
     font-size: 24px;
     margin-bottom: 23px;
 }
 
-.card-list__item-description {
+.realty-card__location {
     display: flex;
     margin-bottom: 20px;
 }
 
-.card-list__item-description-text {
+.realty-card__location-text {
     font-size: 14px;
     color: #4c4c4c;
     margin-left: 7px;
 }
 
-.card-list__item-time {
+.realty-card__logo-metro {
+    margin-right: 5px;
+}
+
+.realty-card__time {
     font-size: 13px;
     margin-left: 18px;
     color: #a7a7a7;
 }
 
-.card-list__item-text {
+.realty-card__address {
     font-size: 14px;
     color: #4c4c4c;
     margin-bottom: 25px;
@@ -487,12 +486,12 @@ body {
 }
 
 
-.card__tags {
+.realty-card__tags {
     display: flex;
     justify-content: space-between;
 }
 
-.card__tag {
+.realty-card__tag {
     margin-right: 6px;
 }
 
