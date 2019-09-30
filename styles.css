@@ -309,13 +309,13 @@ body {
     padding-bottom: 14px;
 }
 
-.map__card-logo-metro {
+.card__logo-metro {
     margin-right: 5px;
 }
 
 .map__card-item-description-text {
     font-size: 13px;
-    color: #4c4c4c
+    color: #4c4c4c;
 }
 
 .map__card-item-time {
@@ -365,8 +365,7 @@ body {
 
 .map__table-button {
     width: 256px;
-    height: 36px;
-    margin-bottom: 20px;
+    line-height: 20px;
 }
 
 .button_shadow-green {
@@ -378,4 +377,160 @@ body {
     top: 46px;
     right: 47px;
     border-radius: 50%;
+}
+
+.card {
+    background: #f7f7f7;
+    height: 1849px;
+}
+
+.card-list__item {
+    display: flex;
+    padding-top: 60px;
+}
+
+.card-list__item-body {
+    width: 580px;
+    height: 520px;
+    background: #ffffff;
+    padding: 35px 53px 0 53px;
+}
+
+.card-list__item-caption {
+    font-size: 24px;
+    margin-bottom: 23px;
+}
+
+.card-list__item-description {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card-list__item-description-text {
+    font-size: 14px;
+    color: #4c4c4c;
+    margin-left: 7px;
+}
+
+.card-list__item-time {
+    font-size: 13px;
+    margin-left: 18px;
+    color: #a7a7a7;
+}
+
+.card-list__item-text {
+    font-size: 14px;
+    color: #4c4c4c;
+    margin-bottom: 25px;
+}
+
+.card-table {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 29px;
+}
+
+.card-table__row td {
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    padding: 12px 0 3px 26px;
+}
+
+.card-table__row td:first-child {
+    padding-left: 0;
+}
+
+.card-table__row td:last-child {
+    border-right: none;
+}
+
+.card-table__row_item td {
+    padding: 6px 52px 3px 0;
+}
+
+.card-table__row_item td:last-child {
+    padding-right: 0;
+}
+
+.card-table__cell_caption {
+    color: #6a6a6a;
+    width: 50%;
+}
+
+.card-table__cell_description {
+    border-left: 1px solid #e7e7e7;
+    padding: 5px 0 5px 25px;
+    width: 50%;
+    color: #4c4c4c;
+}
+
+.card-table__row tr {
+    border-right: 1px solid #e7e7e7;
+    padding: 12px 80px 3px 26px;
+}
+
+.card-table__row tr:first-child {
+    padding-left: 0;
+}
+
+.card-table__row tr:last-child {
+    border: none;
+}
+
+.card-table__row_no-border {
+    border: none;
+}
+
+.card-table__row_no-border .card-table__cell_caption,
+.card-table__row_no-border .card-table__cell_description {
+    border-bottom: none;
+}
+
+
+.card__tags {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__tag {
+    margin-right: 6px;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 11px;
+    background: #f7f7f7;
+    border-radius: 4px;
+    color: #079fc2;
+}
+
+.tag__icon {
+    width: 15px;
+    height: 15px;
+}
+
+.tag__description {
+    padding-left: 11px;
+}
+
+.logo-metro_blue {
+    fill: #3072c4;
+}
+
+.logo-metro_grey {
+    fill: #aeaeae;
+}
+
+.card-list__item-image {
+    position: relative;
+}
+
+.card__button {
+    position: absolute;
+    bottom: 35px;
+    left: 189px;
+    width: 222px;
+    text-transform: uppercase;
 }
