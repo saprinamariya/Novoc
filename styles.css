@@ -123,7 +123,7 @@ body {
     padding: 0 25px;
     border: none;
     outline: none;
-    border-radius: 3px 3px;
+    border-radius: 4px;
     font-size: 14px;
     color: #ffffff;
     transition: background .2s;
@@ -134,7 +134,7 @@ body {
 }
 
 .button_blue:hover {
-    background: #0f7991;
+    background: #068ac2;
 }
 
 .search-panel__btn-search {
@@ -224,7 +224,6 @@ body {
     z-index: 2;
     width: 13px;
     height: 13px;
-    background: url(../img/slider.png) no-repeat;
     cursor: pointer
 }
 .ui-slider .ui-slider-range {
@@ -289,10 +288,10 @@ body {
 
 .map__card-body {
     width: 306px;
-    height: 373px;
     background-color: #ffffff;
     padding-left: 23px;
     padding-top: 22px;
+    padding-bottom: 20px;
 }
 
 .map__card-item-caption {
@@ -375,13 +374,24 @@ body {
     border-radius: 50%;
 }
 
+
+.mini-container {
+    padding-top: 60px;
+    padding-bottom: 52px;
+}
+
 .realty-cards {
     background: #f7f7f7;
+    padding-bottom: 67px;
 }
 
 .realty-card {
     display: flex;
-    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.realty-card:last-child {
+    padding-bottom: 0;
 }
 
 .realty-card__body {
@@ -522,14 +532,102 @@ body {
     fill: #aeaeae;
 }
 
-.card-list__item-image {
+.realty-card__image {
     position: relative;
 }
 
-.card__button {
+.realty-card__button {
     position: absolute;
     bottom: 35px;
     left: 189px;
     width: 222px;
     text-transform: uppercase;
 }
+
+.button_green {
+    background-color: #3ccfad;
+}
+.realty-cards__button {
+    display: block;
+    width: 279px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 24px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.button_green:hover {
+    background-color: #05cf93;:
+}
+
+.information {
+    margin-top: 67px;
+}
+
+.information__inner {
+    border: 1px solid #e7e7e7;
+    padding-top: 69px;
+    padding-left: 100px;
+}
+
+.information__title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.information__text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 28px;
+    margin-right: 96px;
+    margin-bottom: 35px;
+}
+
+.information__list {
+   display: flex;
+}
+
+.information__item {
+    display: flex;
+    align-items: center;
+    margin-right: 28px;
+}
+
+.information__item:last-child {
+    margin-right: 0;
+}
+
+.information__item-caption {
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 110px;
+    margin-left: 28px;
+}
+
+.footer {
+    height: 185px;
+}
+
+.footer__inner {
+    display: flex;
+    font-size: 14px;
+    height: 100%;
+    align-items: center;
+}
+
+.footer__name {
+    display: flex;
+    margin-left: auto;
+}
+
+.footer__name-text {
+    margin-left: 15px;
+}
+
+
