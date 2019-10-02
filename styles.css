@@ -202,15 +202,20 @@ body {
     background: #ffffff;
     height: 191px;
     margin-top: 37px;
+    padding: 30px 26px 30px 26px;
+    border-radius: 4px;
 }
 
 .search-form__range-title {
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 300;
     padding-top: 30px;
     padding-left: 30px;
 }
 
+.search-form__range-body {
+
+}
 
 #slider {
     width: 200px;
@@ -545,6 +550,44 @@ body {
     text-transform: uppercase;
 }
 
+.realty-card__promotions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 230px;
+    padding: 14px 0 14px 20px;
+    background: #f0f0f0;
+    border-radius: 0 0 0 4px;
+}
+
+.realty-card__promotions_opacity {
+    background: rgba(240,240,240, .75);
+}
+
+.realty-card__promotion-item {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.realty-card__promotion-item:last-child {
+    margin-bottom: 0;
+}
+
+.realty-card__promotion-item-img {
+    margin-right: 17px;
+}
+
+.realty-card__promotion-item-img_locator {
+    margin-right: 12px;
+}
+
+
+.realty-card__promotion-item {
+
+}
+
 .button_green {
     background-color: #3ccfad;
 }
@@ -564,6 +607,12 @@ body {
 .button_green:hover {
     background-color: #05cf93;
 }
+
+.realty-card__image-sale {
+
+}
+
+
 
 .information {
     margin-top: 67px;
@@ -672,5 +721,6 @@ body {
     font-size: 11px;
     font-weight: 400;
 }
+
 
 
