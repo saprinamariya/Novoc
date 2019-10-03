@@ -20,16 +20,17 @@ body {
 }
 
 .header__logo {
-    width: 185px;
-    background: #74cfb7;
     display: flex;
     justify-content: center;
     margin-right: 44px;
+    width: 185px;
+    background: #74cfb7;
 }
 
 .header__logo-image {
-    align-self:center;
+    align-self: center;
 }
+
 .header__item {
     padding-top: 50px;
     padding-right: 20px;
@@ -52,9 +53,11 @@ body {
     display: flex;
     font-size: 14px;
 }
+
 .header__logo-metro {
     margin: auto 15px auto 0;
 }
+
 .logo-metro_yellow {
     fill: #fbaa34;
 }
@@ -201,7 +204,7 @@ body {
 
 .search-form {
     background: #ffffff;
-    padding: 30px 26px 30px 26px;
+    padding: 30px 26px;
     border-radius: 4px;
 }
 
@@ -216,15 +219,36 @@ body {
     margin-bottom: 20px;
 }
 
-.search-form__range-body {
-
-}
-
 .range-slider {
+    position: relative;
     width: 850px;
     height: 8px;
     background: #74cfb7;
     border-radius: 4px;
+}
+
+.range-slider:before,
+.range-slider:after {
+    content: "";
+    position: absolute;
+    top: -13px;
+    width: 82px;
+    height: 32px;
+    border: 1px solid #ededed;
+    border-radius: 20px;
+    background: #f7f7f7;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.range-slider:before {
+    content: 'от 1';
+    left: 0;
+}
+
+.range-slider:after {
+    content: 'до 69';
+    right: 0;
 }
 
 .search-form__region {
@@ -233,8 +257,14 @@ body {
 }
 
 .search-form__region-item {
-    display: flex;
-    margin-bottom: 10px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    user-select: none;
 }
 
 .search-form__region-item:last-child {
@@ -242,21 +272,70 @@ body {
 }
 
 .search-form__region-item input {
-    margin-right: 10px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fbfbfb;
+    border-radius: 30%;
+    border: 2px solid #d5d5d5;
+}
+
+.search-form__region-item:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.search-form__region-item input:checked ~ .checkmark {
+    background-color: #ffffff;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.search-form__region-item input:checked ~ .checkmark:after {
+    display: block;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+.search-form__region-item .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 30%;
+    background: #4b4b4b;
+    border: 1px solid #a8a8a8;
 }
 
 .search-form__bottom-row {
     display: flex;
+    border-radius: 4px;
 }
 
 .search-form__select {
     flex: 1;
+    border: none;
+    outline: none;
+    border-right: 2px solid #dfdfdf;
+    padding-left: 10px;
 }
 
 .search-form__submit {
     width: 152px;
 }
-
 
 .map {
     margin: 30px 0;
@@ -566,11 +645,6 @@ body {
     margin-right: 12px;
 }
 
-
-.realty-card__promotion-item {
-
-}
-
 .button_green {
     background-color: #3ccfad;
 }
@@ -590,12 +664,6 @@ body {
 .button_green:hover {
     background-color: #05cf93;
 }
-
-.realty-card__image-sale {
-
-}
-
-
 
 .information {
     margin-top: 67px;
@@ -681,7 +749,7 @@ body {
     border: none;
     outline: none;
     margin-bottom: 5px;
-    transition: all 0.4s;
+    transition: all .4s;
 }
 
 .feedback-btn:last-child {
